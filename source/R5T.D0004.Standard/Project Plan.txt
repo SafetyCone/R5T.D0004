@@ -1,0 +1,4 @@
+R5T.D0004.Standard - The standard aggregation library for the IGuidProvider service.
+
+Goals
+
