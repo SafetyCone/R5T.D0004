@@ -1,0 +1,4 @@
+R5T.D0004.Base - A Base definitions library for the IGuidProvider service.
+
+Goals
+
