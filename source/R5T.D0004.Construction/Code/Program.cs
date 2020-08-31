@@ -6,7 +6,9 @@ namespace R5T.D0004.Construction
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var guid = Guid.NewGuid();
+
+            Console.WriteLine(guid);
         }
     }
 }
