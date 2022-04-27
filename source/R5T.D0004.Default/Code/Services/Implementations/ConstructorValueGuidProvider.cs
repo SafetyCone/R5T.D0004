@@ -1,15 +1,19 @@
-﻿using System;
+using System;
 using System.Threading.Tasks;
+
+using R5T.T0064;
 
 
 namespace R5T.D0004.Default
 {
-    public class ConstructorValueGuidProvider : IGuidProvider
+    [ServiceImplementationMarker]
+    public class ConstructorValueGuidProvider : IGuidProvider, IServiceImplementation
     {
         private Guid Guid { get; }
 
 
-        public ConstructorValueGuidProvider(Guid guid)
+        public ConstructorValueGuidProvider(
+            [NotServiceComponent] Guid guid)
         {
             this.Guid = guid;
         }

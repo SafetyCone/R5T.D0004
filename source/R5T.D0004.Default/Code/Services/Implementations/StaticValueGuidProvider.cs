@@ -1,10 +1,10 @@
-﻿using System;
-using System.Threading.Tasks;
+using System;
+using System.Threading.Tasks;using R5T.T0064;
 
 
 namespace R5T.D0004.Default
-{
-    public class StaticValueGuidProvider : IGuidProvider
+{[ServiceImplementationMarker]
+    public class StaticValueGuidProvider : IGuidProvider,IServiceImplementation
     {
         /// <summary>
         /// Note: not thread-safe.
